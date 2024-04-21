@@ -10,7 +10,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.php"> <img src="img/logo.png" alt="logo" style="height: 50px;"> </a>
+                        <a class="navbar-brand" href="index.php"> <img src="img/logo_default.png" alt="logo" style="height: 150px;"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="menu_icon"><i class="fas fa-bars"></i></span>
                         </button>
@@ -20,34 +20,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.php">Trang chủ</a>
                                 </li>
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        sản phẩm
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="category.html"> danh mục sản phẩm</a>
-                                        <a class="dropdown-item" href="single-product.html">chi tiết sản phẩm</a>
-
-                                    </div>
-                                </li> -->
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="product.php">sản phẩm</a>
                                 </li>
-                                
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Tin Tức
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="blog.php"> Tin Tức</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li> -->
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#">Tin Tức</a>
-                                </li> -->
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">Liên hệ</a>
                                 </li>
@@ -131,12 +106,6 @@
                                         }
                                     ?>
                                 </a>
-                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="single_product">
-
-                                    </div>
-                                </div> -->
-
                             </div>
                         </div>
                     </nav>

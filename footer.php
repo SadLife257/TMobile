@@ -9,9 +9,9 @@
                     <div class="single_footer_part">
                         <h4>Thông Tin Cửa Hàng</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Cửa Hàng Smobile</a></li>
-                            <li><a href="">1A6 P. Cù Chính Lan, Khương Thượng, Thanh Xuân, Hà Nội</a></li>
-                            <li><a href="">Hotline: 0839.363.363</a></li>
+                            <li><a href="">Cửa Hàng TMobile</a></li>
+                            <li><a href="">19 Đ. Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh</a></li>
+                            <li><a href="">Hotline: 0987.654.321</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,9 +42,9 @@
                     <div class="single_footer_part">
                         <h4>Hotline</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Gọi mua hàng: 0839.363.363</a></li>
-                            <li><a href="">Gọi kiếu nại: 0977.142.274</a></li>
-                            <li><a href="">Gọi bảo hành: 0989.994.981</a></li>
+                            <li><a href="">Gọi mua hàng: 0987.654.321</a></li>
+                            <li><a href="">Gọi kiếu nại: 0987.654.321</a></li>
+                            <li><a href="">Gọi bảo hành: 0987.654.321</a></li>
                             <li><a href="">(8h00 - 22h00)</a></li>
                         </ul>
                     </div>
@@ -62,7 +62,7 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved <i class="ti-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/tiendatnguyenit" target="_blank">Smobile</a>
+                                </script> All rights reserved <i class="ti-heart" aria-hidden="true"></i> by <a href="https://www.google.com/" target="_blank">TMobile</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </P>
                         </div>
@@ -70,9 +70,9 @@
                     <div class="col-lg-4">
                         <div class="footer_icon social_icon">
                             <ul class="list-unstyled">
-                                <li><a href="https://www.facebook.com/tiendatnguyenit" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/_doubl3d_/" class="single_social_icon"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://tappi.vn/doubled" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                                <li><a href="https://www.google.com/" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.google.com/" class="single_social_icon"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.google.com/" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
                             </ul>
                         </div>
                     </div>

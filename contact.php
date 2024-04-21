@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Smobile</title>
-    <link rel="icon" href="img/logos.png">
+    <link rel="icon" href="img/logo_mini_default.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -82,12 +82,14 @@
                         <div class="row">
                             <div class="col-12">
                                 <div id="map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.779913365154!2d105.82433209999999!3d21.
-                                        0014576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac85c14f1557%3A0xcd7d66f85770532!2sSmobile!
-                                        5e0!3m2!1svi!2s!4v1651914742953!5m2!1svi!2s" 
-                                        width="100%" height="300" style="border:0;" allowfullscreen="" 
-                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                    </iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15680.09560268348!2d106.6997639!3d10.7326399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b2747a81a3%3A0x33c1813055acb613!2zxJDhuqFpIGjhu41jIFTDtG4gxJDhu6ljIFRo4bqvbmc!5e0!3m2!1svi!2s!4v1713712873594!5m2!1svi!2s" 
+                                    width="600" 
+                                    height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                                 </div>
                             </div>
                         </div>
@@ -97,21 +99,21 @@
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
                             <h3>Địa Chỉ</h3>
-                            <p>1A6 P. Cù Chính Lan, Khương Thượng, Thanh Xuân, Hà Nội</p>
+                            <p>19 Đ. Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                         <div class="media-body">
                             <h3>Hotline</h3>
-                            <p>0839.363.363 (8h00 - 22h00)</p>
+                            <p>0987.654.321 (8h00 - 22h00)</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
                         <div class="media-body">
                             <h3>Email</h3>
-                            <p>smobleshop@gmail.com</p>
+                            <p>tmobile@gmail.com</p>
                         </div>
                     </div>
                 </div>
