@@ -2,7 +2,7 @@
 <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span>
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <a href="https://www.facebook.com/tiendatnguyenit" style="color:red;">Smobile</a></span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <a href="https://www.google.com/" style="color:red;">TMobile</a></span>
             </div>
           </footer>
           <!-- partial -->
