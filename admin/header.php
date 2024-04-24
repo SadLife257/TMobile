@@ -147,28 +147,6 @@
               <li class="nav-item dropdown d-none d-lg-block">
                 <a class="nav-link btn btn-success create-new-button addfont" href="../index.php">Về Trang Chủ</a>
               </li>
-              <li class="nav-item nav-settings d-none d-lg-block">
-                <a class="nav-link" href="#">
-                  <i class="mdi mdi-view-grid"></i>
-                </a>
-              </li>
-              <li class="nav-item dropdown border-left">
-                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                  <i class="mdi mdi-email"></i>
-                  <!-- <span class="count bg-success"></span> -->
-                </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                  
-                </div>
-              </li>
-              <li class="nav-item dropdown border-left">
-                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-bell"></i>
-                  <!-- <span class="count bg-danger"></span> -->
-                </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                </div>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
