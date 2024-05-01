@@ -1,7 +1,7 @@
 <?php
 ob_start();
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=smobile;charset=utf8", "root", "");
+    $conn = new PDO("mysql:host=localhost;dbname=tmobiledb;charset=utf8", "root", "");
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

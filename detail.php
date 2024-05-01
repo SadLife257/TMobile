@@ -1,56 +1,33 @@
 <?php
 include './connect.php';
-if (isset($_GET["id"])) {
-    $idSanpham = $_GET['id'];
-    selectAll("UPDATE sanpham SET luotxem=luotxem+1 WHERE id=$idSanpham");
-    foreach (selectAll("SELECT * FROM sanpham WHERE id=$idSanpham") as $row) {
-        $tensp = $row['ten'];
-        $gia = $row['gia'];
-        $manhinh = $row['manhinh'];
-        $hedieuhanh = $row['hedieuhanh'];
-        $cpu = $row['cpu'];
-        $camera = $row['camera'];
-        $pin = $row['pin'];
-        $ram = $row['ram'];
-        $bonho = $row['bonho'];
-        $anh1 = $row['anh1'];
-        $anh2 = $row['anh2'];
-        $anh3 = $row['anh3'];
-        $luotxem = $row['luotxem'];
-        $cateid = $row['id_danhmuc'];
-        $chitiet = $row['chitiet'];
-        $mota =$row['mota'];
-        foreach (selectAll("SELECT * FROM danhmuc WHERE id_dm={$row['id_danhmuc']}") as $item) {
-            $danhmuc = $item['danhmuc'];
+    if (isset($_GET["id"])) {
+        $idSanpham = $_GET['id'];
+        selectAll("UPDATE sanpham SET luotxem=luotxem+1 WHERE id=$idSanpham");
+        foreach (selectAll("SELECT * FROM sanpham WHERE id=$idSanpham") as $row) {
+            $tensp = $row['ten'];
+            $gia = $row['gia'];
+            $manhinh = $row['manhinh'];
+            $hedieuhanh = $row['hedieuhanh'];
+            $cpu = $row['cpu'];
+            $camera = $row['camera'];
+            $pin = $row['pin'];
+            $ram = $row['ram'];
+            $bonho = $row['bonho'];
+            $anh1 = $row['anh1'];
+            $anh2 = $row['anh2'];
+            $anh3 = $row['anh3'];
+            $luotxem = $row['luotxem'];
+            $cateid = $row['id_danhmuc'];
+            $chitiet = $row['chitiet'];
+            $mota =$row['mota'];
+            foreach (selectAll("SELECT * FROM danhmuc WHERE id_dm={$row['id_danhmuc']}") as $item) {
+                $danhmuc = $item['danhmuc'];
+            }
         }
     }
-}
+include 'header.php';
 ?>
-<!doctype html>
-<html lang="zxx">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TMobile</title>
-    <link rel="icon" href="img/logo_mini_default.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/lightslider.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
 .header_bg {
@@ -80,9 +57,7 @@ if (isset($_GET["id"])) {
 </style>
 
 <body>
-
-    <?php include 'header.php';?>
-
+<?php include 'navbar.php';?>
   <!--================Home Banner Area =================-->
   <!-- breadcrumb start-->
   <section class="breadcrumb header_bg">
@@ -143,23 +118,6 @@ if (isset($_GET["id"])) {
                                             <input class="input-number" name="soluong" type="number" value="1" min="1" max="100" readonly>
                                             <span class="number-increment"> <i class="ti-plus"></i></span>
                                         </div>
-
-
-                                        <!-- if((rowCount đơn hàng where status =0) =0){
-                                                insert dơn hàng ;
-                                                insert ctđơn hàng (fk là id đơn hàng mới tạo, và thông tin sản phẩm vừa thêm);
-                                            }
-                                            else{
-                                                ìf(selectAll ct đơn hàng đã có sp muốn thêm ){
-                                                    update số lượng
-                                                }
-                                                else{
-                                                    insert ctđơn hàng (fk là id đơn hàng mới tạo, và thông tin sản phẩm vừa thêm);
-
-                                                }
-                                            } -->
-
-
                                         <?php 
                                             if (isset($_POST["addcart"])) {
                                                 if (isset($_COOKIE["user"])) {
@@ -188,7 +146,7 @@ if (isset($_GET["id"])) {
                                                     
                                                     echo "<meta http-equiv='refresh' content='0'>";
                                                 }else{
-                                                    echo "<script>alert('Vui lòng đăng nhập để mua hàng')</script>";
+                                                    echo "<script>document.location.href='login.php'</script>";
                                                 }
                                             }
                                         ?>
@@ -445,38 +403,6 @@ if (isset($_GET["id"])) {
     <!-- product_list part end-->
 
     <?php include 'footer.php';?>
-
-
-    <!-- jquery plugins here-->
-    <!-- jquery -->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="js/lightslider.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
-    <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/swiper.jquery.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/stellar.js"></script>
-    <!-- custom js -->
-    <script src="js/theme.js"></script>
-    <script src="js/custom.js"></script>
 </body>
 
 </html>

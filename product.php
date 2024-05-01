@@ -6,37 +6,10 @@
             $iddanhmuc = $item['id'];
         }
     }
-   
+    include 'header.php';
 ?>
-<!doctype html>
-<html lang="zxx">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php include 'header.php';?>
     <title>TMobile - Sản phẩm</title>
-    <link rel="icon" href="img/logo_mini_default.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- nice select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/price_rangs.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <style>
@@ -58,12 +31,20 @@
     height: 230px;
 
 }
+.parentContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 </style>
 
 <body>
-
-    <?php include 'header.php';?>
-
+<?php include 'navbar.php';?>
   <!--================Home Banner Area =================-->
   <!-- breadcrumb start-->
   <section class="breadcrumb header_bg">
@@ -123,7 +104,7 @@
                             if (rowCount("SELECT * FROM `sanpham` WHERE `ten` LIKE '%$keyword%' AND status = 0")>0) {
                                 foreach (selectAll("SELECT * FROM `sanpham` WHERE `ten` LIKE '%$keyword%' AND status = 0 LIMIT $item_per_page OFFSET $offset") as $row) {
                                 ?>              
-                                <div class="col-lg-4 col-sm-6" style="height: 500px;">
+                                <div class="col-lg-4 col-sm-6" style="height: 400px;">
                                     <div class="single_product_item" <?= $row['id'] ?> >
                                         <a href="detail.php?id=<?= $row['id'] ?>" >
                                             <img src="img/product/<?= $row['anh1'] ?>" style="width: 230px;height: 230px;" alt="">
@@ -131,8 +112,6 @@
                                         <div class="single_product_text">
                                             <h4 style="font-size: 16px"><?= $row['ten'] ?></h4>
                                             <h3><?= number_format($row['gia']) . 'đ' ?></h3>
-                                            <p><a href="detail.php?id=<?= $row['id'] ?>" style="font-size: 14px">Xem chi tiết</a></p>
-                                            <a href="detail.php?id=<?= $row['id'] ?>">+ Thêm vào giỏ</a>
                                         </div>
                                     </div>
                                 </div>
@@ -205,16 +184,14 @@
                                 $totalpage = ceil($numrow / $item_per_page);
                                 foreach (selectAll("SELECT * FROM sanpham WHERE status = 0 LIMIT $item_per_page OFFSET $offset") as $row) {    
                                 ?>
-                                    <div class="col-lg-4 col-sm-6" style="height: 500px;">
+                                    <div class="col-lg-4 col-sm-6" style="height: 400px;">
                                         <div class="single_product_item" <?= $row['id'] ?> >
-                                        <a href="detail.php?id=<?= $row['id'] ?>" >
-                                            <img src="img/product/<?= $row['anh1'] ?>" style="width: 230px;height: 230px;" alt="">
-                                        </a>
+                                            <a href="detail.php?id=<?= $row['id'] ?>" >
+                                                <img src="img/product/<?= $row['anh1'] ?>" style="width: 230px;height: 230px;" alt="">
+                                            </a>
                                             <div class="single_product_text">
                                                 <h4 style="font-size: 16px"><?= $row['ten'] ?></h4>
                                                 <h3><?= number_format($row['gia']) . 'đ' ?></h3>
-                                                <p><a href="detail.php?id=<?= $row['id'] ?>" style="font-size: 14px">Xem chi tiết</a></p>
-                                                <a href="detail.php?id=<?= $row['id'] ?>">+ Thêm vào giỏ</a>
                                             </div>
                                         </div>
                                     </div>
@@ -320,36 +297,6 @@
     <?php 
         include 'footer.php';
     ?>
-    
-
-    <!-- jquery plugins here-->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
-    <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/price_rangs.js"></script>
-    <!-- custom js -->
-    <script src="js/custom.js"></script>
 </body>
 
 </html>
