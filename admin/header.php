@@ -46,8 +46,8 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.php"><img src="assets/images/logo_dark.png" alt="logo"  style="width: 150px; height: 84px"/></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="assets/images/logo_mini_dark.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.php"><img src="assets/images/logo_dark.png" alt="logo"  style="height: 15%"/></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="assets/images/logo_mini_dark.png" alt="logo" style="width: auto; height:auto;"/></a>
         </div>
         <ul class="nav ">
           <!-- <li class="nav-item profile">

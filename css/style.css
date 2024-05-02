@@ -3122,7 +3122,7 @@ ul {
 
 .banner_part .owl-nav {
     position: absolute;
-    right: -20%;
+    right: -10%;
     bottom: 0;
     padding: 35px 80px;
     background-color: #fff;
@@ -3491,7 +3491,7 @@ ul {
 /* line 66, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 
 .single_product_item .single_product_text {
-    padding: 16px 0;
+    padding: 16px 16px;
     background-color: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -3551,7 +3551,7 @@ ul {
 /* line 105, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 
 .single_product_item:hover .single_product_text {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 
